@@ -370,7 +370,7 @@ export const products = [
   //   featured: false
   // }
   {
-  id: "3",
+  id: "sn1",
   name: "Pattice",
   category: "snacks",
   price: 23,
@@ -384,7 +384,7 @@ export const products = [
 },
 
   {
-  id: "3",
+  id: "sn2",
   name: "Kachori",
   category: "snacks",
   price: 23,
@@ -398,7 +398,7 @@ export const products = [
 },
 
   {
-  id: "3",
+  id: "sn3",
   name: "Samosa",
   category: "snacks",
   price: 23,
@@ -426,7 +426,7 @@ export const products = [
 // },
 
   {
-  id: "3",
+  id: "sn4",
   name: "Dhokla",
   category: "snacks",
   price: 23,
@@ -440,7 +440,7 @@ export const products = [
 },
 
   {
-  id: "3",
+  id: "sn5",
   name: "Surali Wadi",
   category: "snacks",
   price: 23,
@@ -454,7 +454,7 @@ export const products = [
 },
 
   {
-  id: "3",
+  id: "sn6",
   name: "Alu Wadi",
   category: "snacks",
   price: 23,

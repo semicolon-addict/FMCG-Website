@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { categories } from '@/data/products';
 
 const Footer = () => {
   return (
@@ -26,10 +27,11 @@ const Footer = () => {
             <h4 className="font-semibold text-xl text-primary mb-5">Quick Links</h4>
             <ul className="space-y-3">
               <li><Link to="/" className="text-foreground/80 hover:text-primary transition-colors hover:underline">Home</Link></li>
-              <li><Link to="/products/namkeens" className="text-foreground/80 hover:text-primary transition-colors hover:underline">Namkeens</Link></li>
-              <li><Link to="/products/sweets" className="text-foreground/80 hover:text-primary transition-colors hover:underline">Sweets</Link></li>
-              <li><Link to="/products/snacks" className="text-foreground/80 hover:text-primary transition-colors hover:underline">Snacks</Link></li>
-              <li><Link to="/products/bakarwadi" className="text-foreground/80 hover:text-primary transition-colors hover:underline">Bakarwadi</Link></li>
+              {categories.map(cat => (
+                <li key={cat.slug}>
+                  <Link to={`/products/${cat.slug}`} className="text-foreground/80 hover:text-primary transition-colors hover:underline">{cat.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 

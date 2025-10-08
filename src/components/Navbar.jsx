@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChefHat } from 'lucide-react';
+import { categories } from '@/data/products';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -27,16 +28,15 @@ const Navbar = () => {
     setIsOpen(false);
   }, [location]);
 
-const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'Namkeens', path: '/products/namkeens' },
-  { name: 'Sweets', path: '/products/sweets' },
-  { name: 'Snacks', path: '/products/snacks' },      // New
-  { name: 'Bakarwadi', path: '/products/bakarwadi' },// New
-  { name: 'Diwali Special', path: '/offers' },               // New
-  { name: 'About', path: '/about' },
-  // { name: 'Contact', path: '/contact' },
-];
+  // Build product category links from data so navigation stays in sync with available categories
+  const productLinks = categories.map(cat => ({ name: cat.name, path: `/products/${cat.slug}` }));
+
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    ...productLinks,
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+  ];
 
   return (
     <header 
