@@ -40,7 +40,7 @@ export const products = [
     ingredients: ["Rice flour", "Gram flour (besan)", "Urad dal flour", "Moong dal flour", "Cumin seeds", "Sesame seeds", "Carom seeds (ajwain)", "Red chili powder", "Turmeric powder", "Salt", "Oil", "Water"],
     weight: "200g",
     isNew: false,
-    featured: false
+    featured: true
   },
   {
     id: "n4",
@@ -250,7 +250,7 @@ export const products = [
   ingredients: ["All-purpose flour (maida)", "Grated coconut", "Jaggery or sugar", "Cardamom powder", "Poppy seeds", "Dry fruits", "Ghee or oil", "Salt", "Water"],
   weight: "250g",
   isNew: false,
-  featured: false
+  featured: true
     },
 {
   id: "s7",
@@ -496,7 +496,7 @@ export const categories = [
     name: "Bakarwadi",
     slug: "bakarwadi",
     //description: "The Perfect Quick On-the-Go Snack",
-    image: "/finalImages/snacks.jpg"
+    image: "/finalImages/baakrwadi.jpg"
   },
 ];
 
